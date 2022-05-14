@@ -10,11 +10,7 @@ const colorpicker = (window.colorpicker = require("bootstrap-colorpicker"));
 const Pickr = (window.Pickr = require("@simonwep/pickr"));
 
 window.Vue = require('vue');
-Vue.component(
-    "language-switcher",
-    require("./components/LanguageSwitcher.vue").default
-);
-
-const app = new Vue({
-    el: "#app"
-});
+import LanguageSwitcher from './components/LanguageSwitcher.vue'
+const app = Vue.createApp({});
+app.component("language-switcher", LanguageSwitcher);
+app.mount("#app");
