@@ -1,0 +1,25 @@
+.table {
+    color: #535353
+}
+
+.ck.ck-editor__editable_inline {
+    min-height: 150px;
+}
+
+.no-radius {
+    border-radius: 0px;
+}
+
+.circular--portrait {
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.circular--portrait img {
+    width: 100%;
+    height: auto;
+}
